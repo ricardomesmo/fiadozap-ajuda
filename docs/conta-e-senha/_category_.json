@@ -1,0 +1,8 @@
+{
+  "label": "Conta e senha",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Ajuda com login, senha e acesso à conta."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Vendas",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Veja como registrar vendas, parcelamentos e pagamentos."
+  }
+}

@@ -59,11 +59,64 @@ const config: Config = {
       disableSwitch: false,
     },
 
+    metadata: [
+      {
+        name: 'description',
+        content:
+          'Central de ajuda do Fiado Zap. Aprenda como cadastrar clientes, registrar vendas, controlar pagamentos, recuperar senha e remover anúncios.',
+      },
+      {
+        name: 'keywords',
+        content:
+          'Fiado Zap, ajuda Fiado Zap, controlar fiado, app de fiado, controle de clientes, controle de vendas, vendas fiadas, cobrança pelo WhatsApp',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:site_name',
+        content: 'Ajuda Fiado Zap',
+      },
+      {
+        property: 'og:locale',
+        content: 'pt_BR',
+      },
+      {
+        property: 'og:image',
+        content: 'https://ajuda.fiadozap.com.br/img/fiadozap-social-card.jpg',
+      },
+      {
+        property: 'og:image:width',
+        content: '1200',
+      },
+      {
+        property: 'og:image:height',
+        content: '630',
+      },
+      {
+        property: 'og:image:alt',
+        content: 'Fiado Zap - Central de ajuda para controlar clientes, vendas e pagamentos',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://ajuda.fiadozap.com.br/img/fiadozap-social-card.jpg',
+      },
+      {
+        name: 'twitter:image:alt',
+        content: 'Fiado Zap - Central de ajuda para controlar clientes, vendas e pagamentos',
+      },
+    ],
+
     navbar: {
       title: 'Ajuda Fiado Zap',
       logo: {
         alt: 'Fiado Zap',
-        src: 'img/logo.svg',
+        src: 'img/fiadozap.png',
       },
       items: [
         {

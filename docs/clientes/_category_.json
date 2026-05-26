@@ -1,0 +1,8 @@
+{
+  "label": "Clientes",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Aprenda a cadastrar, editar e acompanhar seus clientes."
+  }
+}

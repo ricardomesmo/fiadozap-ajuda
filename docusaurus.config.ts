@@ -161,7 +161,15 @@ const config: Config = {
       ],
       copyright: `© ${new Date().getFullYear()} Fiado Zap. Todos os direitos reservados.`,
     },
-
+    plugins: [
+      [
+        '@docusaurus/plugin-google-gtag',
+        {
+          trackingID: 'G-NPMPP29MHK',
+          anonymizeIP: true,
+        },
+      ],
+    ],
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

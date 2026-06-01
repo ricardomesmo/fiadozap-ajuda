@@ -48,6 +48,21 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-NPMPP29MHK',
+        anonymizeIP: true,
+      },
+    ],
+    [
+      '@docusaurus/preset-classic',
+      {
+        googleTagManager: {
+          containerId: 'GTM-WP25TGLH',
+        },
+      },
+    ],
   ],
 
   themeConfig: {
@@ -161,15 +176,6 @@ const config: Config = {
       ],
       copyright: `© ${new Date().getFullYear()} Fiado Zap. Todos os direitos reservados.`,
     },
-    plugins: [
-      [
-        '@docusaurus/plugin-google-gtag',
-        {
-          trackingID: 'G-NPMPP29MHK',
-          anonymizeIP: true,
-        },
-      ],
-    ],
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

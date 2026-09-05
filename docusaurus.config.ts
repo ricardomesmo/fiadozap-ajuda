@@ -54,12 +54,25 @@ const config: Config = {
         anonymizeIP: true,
       },
     ],
-
-    // Use apenas se você também quiser GTM além do GA4 direto:
     [
       '@docusaurus/plugin-google-tag-manager',
       {
         containerId: 'GTM-WP25TGLH',
+      },
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        lastmod: 'date',
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+        createSitemapItems: async (params: any) => {
+          const { defaultCreateSitemapItems, ...rest } = params;
+          const items = await defaultCreateSitemapItems(rest);
+          return items.filter((item: any) => !item.url.includes('/page/'));
+        },
       },
     ],
   ],
